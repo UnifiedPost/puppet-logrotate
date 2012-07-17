@@ -1,0 +1,21 @@
+<%= rotation_interval %>
+rotate <%= retention_period %>
+create
+dateext
+compress
+include /etc/logrotate.d
+
+/var/log/wtmp {
+    missingok
+    monthly
+    create 0664 root utmp
+        minsize 1M
+    rotate 1
+}
+
+/var/log/btmp {
+    missingok
+    monthly
+    create 0600 root utmp
+    rotate 1
+}
