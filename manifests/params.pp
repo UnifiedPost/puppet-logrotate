@@ -1,5 +1,6 @@
-# Class logrotate::params
+# = Class: logrotate::params
 #
+# A place for global defaults and/or distro specific configuration
 #
 # == Parameters:
 #
