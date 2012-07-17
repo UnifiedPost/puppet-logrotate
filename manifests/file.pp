@@ -14,6 +14,6 @@ define logrotate::file (
     group   => 'root',
     mode    => '0644',
     content => template('logrotate/logrotate.erb'),
-    require => Class['logrotate::config'],
+    require => Package['logrotate'],
   }
 }
