@@ -10,14 +10,14 @@
 <% options.each do |opt| -%>
 	<%= opt %>
 <% end -%>
-<% if prerotate != "NONE" -%>
-	prerotate 
-		<%= prerotate %> 
+<% if prerotate != :undef -%>
+	prerotate
+		<%= prerotate %>
 	endscript
 <% end -%>
-<% if postrotate != "NONE" -%>
-	postrotate 
-		<%= postrotate %> 
-	endscript 
+<% if postrotate != :undef -%>
+	postrotate
+		<%= postrotate %>
+	endscript
 <% end -%>
 }
